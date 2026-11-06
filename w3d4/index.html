@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>w3d4</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <h1 id="page-title">Atelier du Parfum</h1>
+    <div class="button-container">
+        <button onclick="modTitle()">Cambia titolo</button>
+        <button onclick="changeBackgroundColor()">Cambia colore sfondo</button>
+        <button onclick="changeFooterAddress()">Cambia indirizzo footer</button>
+        <button onclick="modToAmazonLinks()">Modifica link Amazon</button>
+        <button onclick="toggleImageVisibility()">Cancella immagini</button>
+        <button onclick="modPriceColor()">Cambia colore prezzo</button>
+        <button onclick="ResetAll()">Resetta tutte le modifiche</button>
+    </div>
+    <hr>
+    <table>
+        <tbody>
+            <tr>
+                <td class="img-container">
+                    <img src="./assets/acquadigio.jpg" alt="Acqua di Giò(Giorgio Armani)">
+                    <div class="img-description">
+                        <h3 class="img-title">Acqua di Giò(Giorgio Armani)</h3>
+                        <p>Acqua di Giò è uno dei profumi maschili più iconici e venduti al mondo,
+                            lanciato nel 1996 e creato dal celebre maestro profumiere Alberto Morillas.
+                        </p>
+                        <p class="price">100ml - 120€</p>
+                        <a href="https://www.amazon.it/s?k=acqua+di+gio+amazon&adgrpid=199548095953&hvadid=816897231724&hvdev=c&hvexpln=0&hvlocphy=9199036&hvnetw=g&hvocijid=9487697951284213738--&hvqmt=b&hvrand=9487697951284213738&hvtargid=kwd-361414646597&hydadcr=8861_2339725_408574&mcid=40bb5df185ab3406a2d6e0d4e499c781&tag=slhyin-21&ref=pd_sl_2qy8nva14c_b"
+                            target="_blank">Acquista ora</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="img-container">
+                    <img src="./assets/jadoredior.jpg" alt="J'adore(Dior)">
+                    <div class="img-description">
+                        <h3 class="img-title">J'adore(Dior)</h3>
+                        <p> J'adore è uno dei profumi femminili più iconici e venduti al mondo,
+                            lanciato sul mercato nel 1999. Creato per incarnare l'eleganza,
+                            il lusso e la femminilità assoluta della Maison Christian Dior,
+                            si distingue come un bouquet floreale e fruttato, ricco, luminoso e solare.
+                        </p>
+                        <p class="price">100ml - 150€</p>
+                        <a href="https://www.amazon.it/s?k=j%27adore+dior+amazon&adgrpid=199548095953&hvadid=816897231724&hvdev=c&hvexpln=0&hvlocphy=9199036&hvnetw=g&hvocijid=9487697951284213738--&hvqmt=b&hvrand=9487697951284213738&hvtargid=kwd-361414646597&hydadcr=8861_2339725_408574&mcid=40bb5df185ab3406a2d6e0d4e499c781&tag=slhyin-21&ref=pd_sl_2qy8nva14c_b"
+                            target="_blank">Acquista ora</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="img-container">
+                    <img src="./assets/opium.avif" alt="Opium(Yves Saint Laurent)">
+                    <div class="img-description">
+                        <h3 class="img-title">Opium(Yves Saint Laurent)</h3>
+                        <p> Opium di Yves Saint Laurent è uno dei profumi più rivoluzionari,
+                            trasgressivi e leggendari della storia della profumeria moderna,
+                            lanciato nel 1977. Creato per volere dello stilista Yves Saint Laurent,
+                            che desiderava una fragranza che evocasse il lusso, il mistero e la sensualità dell'Oriente
+                            imperiale,
+                            ha ridefinito la categoria dei profumi orientali-speziati.
+                        </p>
+                        <p class="price">100ml - 140€</p>
+                        <a href="https://www.amazon.it/s?k=opium+yves+saint+laurent+amazon&adgrpid=199548095953&hvadid=816897231724&hvdev=c&hvexpln=0&hvlocphy=9199036&hvnetw=g&hvocijid=9487697951284213738--&hvqmt=b&hvrand=9487697951284213738&hvtargid=kwd-361414646597&hydadcr=8861_2339725_408574&mcid=40bb5df185ab3406a2d6e0d4e499c781&tag=slhyin-21&ref=pd_sl_2qy8nva14c_b"
+                            target="_blank">Acquista ora</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="img-container">
+                    <img src="./assets/shalimar.jpg" alt="Shalimar(Guerlain)">
+                    <div class="img-description">
+                        <h3 class="img-title">Shalimar(Guerlain)</h3>
+                        <p> Shalimar di Guerlain è universalmente riconosciuto come il
+                            capostipite dei profumi orientali nella storia della profumeria moderna.
+                            Creato dal celebre naso Jacques Guerlain nel 1921 e presentato ufficialmente a Parigi nel
+                            1925
+                            in occasione dell'Esposizione Internazionale di Arti Decorative.
+                        </p>
+                        <p class="price">100ml - 130€</p>
+                        <a href="https://www.amazon.it/s?k=shalimar+guerlain+amazon&adgrpid=199548095953&hvadid=816897231724&hvdev=c&hvexpln=0&hvlocphy=9199036&hvnetw=g&hvocijid=9487697951284213738--&hvqmt=b&hvrand=9487697951284213738&hvtargid=kwd-361414646597&hydadcr=8861_2339725_408574&mcid=40bb5df185ab3406a2d6e0d4e499c781&tag=slhyin-21&ref=pd_sl_2qy8nva14c_b"
+                            target="_blank">Acquista ora</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="img-container">
+                    <img src="./assets/chanel.jpg" alt="Chanel N.5(Chanel)">
+                    <div class="img-description">
+                        <h3 class="img-title">Chanel N.5(Chanel)</h3>
+                        <p> Chanel N.5 è uno dei profumi più iconici e riconoscibili al mondo, lanciato nel 1921 dalla
+                            celebre Maison Chanel.
+                            Creato dal maestro profumiere Ernest Beaux su richiesta di Gabrielle "Coco" Chanel,
+                            il profumo è stato concepito per incarnare l'eleganza, la femminilità e la modernità della
+                            donna degli anni '20.
+                        </p>
+                        <p class="price">100ml - 160€</p>
+                        <a href="https://www.amazon.it/s?k=chanel+n.5+amazon&adgrpid=199548095953&hvadid=816897231724&hvdev=c&hvexpln=0&hvlocphy=9199036&hvnetw=g&hvocijid=9487697951284213738--&hvqmt=b&hvrand=9487697951284213738&hvtargid=kwd-361414646597&hydadcr=8861_2339725_408574&mcid=40bb5df185ab3406a2d6e0d4e499c781&tag=slhyin-21&ref=pd_sl_2qy8nva14c_b"
+                            target="_blank">Acquista ora</a>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <footer>
+        <p>© 2024 Atelier du Parfum. Via del Parfum, 123 - 12345 Città della Profumeria</p>
+    </footer>
+
+    <script src="./doc.js"></script>
+</body>
+
+</html>
